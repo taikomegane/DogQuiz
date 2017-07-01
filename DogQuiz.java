@@ -60,13 +60,14 @@ public class DogQuiz extends JFrame implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-
+		//イベントを取得
 		JButton b = (JButton) e.getSource();
 
+		//文字列を取得
 		String s = b.getIcon().toString();
 
+		//ラベル２に取得した文字列をセット
 		label2.setText(s);
-
 	}
 
 }
